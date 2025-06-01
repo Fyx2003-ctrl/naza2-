@@ -117,18 +117,31 @@
 - 数据量: 15,512条评论
 
 ### 6.2 分析方法
-1. 情感分析
-2. 主题模型
-3. 时间序列分析
-4. 关键词提取
-5. 可视化分析
+- **数据清洗与预处理:** 包括文本标准化、去除停用词、使用jieba进行分词等。
+- **情感分析:** 利用基于Transformers库的预训练模型进行评论情感分类。
+- **时间序列分析:** 分析评论数量随时间的变化趋势。
+- **关键词提取:** 使用jieba库进行关键词提取。
+- **主题模型:** 应用gensim库的LDA模型识别评论中的主要话题。
+- **可视化分析:** 使用matplotlib、seaborn和wordcloud库生成各种图表，直观展示分析结果。
 
 ### 6.3 技术栈
 - Python 3.8+
-- pandas
-- numpy
-- scikit-learn
-- gensim
-- jieba
-- matplotlib
-- wordcloud 
+- pandas: 数据处理与分析
+- numpy: 数值计算
+- jieba: 中文分词与关键词提取
+- transformers: 基于深度学习的情感分析模型
+- scikit-learn: 机器学习工具，可能用于文本向量化或模型评估
+- gensim: 主题模型（LDA）
+- matplotlib: 数据可视化
+- wordcloud: 词云生成
+- seaborn: 统计数据可视化
+- tqdm: 显示进度条，优化用户体验
+- python-dateutil: 处理日期和时间数据
+- sqlalchemy: 数据库操作 (如果需要)
+- pymssql: SQL Server数据库连接库 (如果需要)
+- python-dotenv: 加载环境变量 (如果需要)
+- networkx: 图形结构分析 (如果需要)
+- lxml: XML/HTML解析 (如果需要)
+- requests: HTTP请求 (如果需要)
+- aiohttp: 异步HTTP客户端/服务器 (如果需要)
+- aiofiles: 异步文件操作 (如果需要) 
